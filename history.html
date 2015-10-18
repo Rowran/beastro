@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title>Beastro</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdn.firebase.com/js/client/2.2.9/firebase.js"></script>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <script>
+      getHistory();
+    </script>
+    <input type="checkbox" id="nav-check">
+      <label for="nav-check" id="nav-icon3">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </input>
+    <div id="content">
+      <embed type="image/svg+xml" src="beastro.svg" id="logo" />
+      <br><br>
+      <h4 id="login-subtitle">Your Beastro History</h4>
+      <ul id="events"></ul>
+    </div>
+    <div class="slide-menu">
+      <h1 id="user"></h1>
+      <nav class="menu">
+        <li><a href="main.html">Home</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="index.html">Log Out</a></li>
+      </nav>
+    </div>
+    <script>
+      $("#user").text(getName());
+    </script>
+  </body>
+</html>
